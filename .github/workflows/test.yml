@@ -262,6 +262,7 @@ jobs:
         run: |
           echo "Python version expected: ${{ matrix.python-version }}"
           python --version
+          
           which python
           pip list
       - name: Run benchmarks
